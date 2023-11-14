@@ -33,7 +33,10 @@ You can add other pictures with a folder with the label name in the 'data/imagen
 
 
 # Part 2:
-
+### Download traffic sign GERMAN from https://www.kaggle.com/datasets/meowmeowmeowmeowmeow/gtsrb-german-traffic-sign/data, and run below script to keep only 10 classes for a easier training
+```
+python preprocess.py
+```
 ### Train models:
 train and save MLP model:
 ```
