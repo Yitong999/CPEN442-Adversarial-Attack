@@ -9,6 +9,7 @@ def args_parser():
     parser.add_argument('--batch_size', type=int, default=64, help="batch size")
     parser.add_argument('--num_of_class', type=int, default=10)
     parser.add_argument('--model', type=str, default='MLP', help="model stucture")
+    parser.add_argument('--save_name', type=str, default='unknow', help="model save name")
     
 
 

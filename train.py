@@ -99,7 +99,8 @@ if __name__ == "__main__":
     lr_s = lr_scheduler.LinearLR(optimizer,start_factor=1.0,end_factor=0.5,total_iters=10)
     model.compile(train_data=train_loader,validation_data=validation_loader,epochs=EPOCHS,loss_function=loss,optimizer=optimizer,learning_rate_scheduler=lr_s)
 
-    torch.save(model, f'models/model_{model_type}.pth') # save model
+    name = args.save_name
+    torch.save(model, f'models/model_{name}.pth') # save model
 
     transforms = Compose([
         Resize([28,28]),

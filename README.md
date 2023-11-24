@@ -42,12 +42,12 @@ python preprocess.py
 ### Train models:
 train and save MLP model:
 ```
-python train.py --epochs=50 --model=MLP
+python train.py --epochs=50 --model=MLP --save_name=MLP_50
 ```
 
 train and save CNN model:
 ```
-python train.py --epochs=20 --model=CNN
+python train.py --epochs=20 --model=CNN --save_name=MLP_20
 ```
 
 ### Advanced PGD attack:
